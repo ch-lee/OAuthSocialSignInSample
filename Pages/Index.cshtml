@@ -1,0 +1,50 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div class="container">
+
+    <div class="row d-flex justify-content-center mt-5">
+
+        <div class="col-lg-6">
+
+
+            <div class="card">
+                <div class="card-body">
+                    
+                    <div class="d-flex flex-column">
+
+                        <div class="mt-3">
+                            <a asp-action="GithubLogin" asp-controller="OAuth" class="btn btn-dark w-100" role="button">
+                                <img src="~/images/github-logo-light.svg" height="24" class="mr-2 mt-1 mb-1"/>
+                                Sign in with GitHub
+                            </a>
+                        </div>
+                        
+                        <div class="mt-3">
+                            <a asp-action="GoogleLogin" asp-controller="OAuth"  class="btn btn-light w-100">
+                                <img src="~/images/google_g_logo.svg" height="24" class="mr-2 mt-1 mb-1"/>
+                                Sign in with Google
+                            </a>
+                        </div>
+
+                        <div class="mt-3">
+                            <a asp-action="SlackLogin" asp-controller="OAuth" class="btn btn-light w-100">
+                                <img src="~/images/slack_mark_web_no_spaces.png" width="24" class="mr-2 mt-1 mb-1" />
+                                Sign in with <strong>Slack</strong>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
